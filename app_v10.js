@@ -2,7 +2,8 @@
    app_v3.js — Süper Lig 4 Büyükler Özel (Orijinal Logolar) 
    ============================================= */
 
-const BOT_API_URL = 'veri-cek.php';
+const BOT_API_URL = window.location.hostname.includes('vercel.app') ? 'api/veri-cek' : 'veri-cek.php';
+
 
 const TR_DAYS_FULL = ['Pazar','Pazartesi','Salı','Çarşamba','Perşembe','Cuma','Cumartesi'];
 const TR_MONTHS = ['OCA','ŞUB','MAR','NİS','MAY','HAZ','TEM','AĞU','EYL','EKİ','KAS','ARA'];
